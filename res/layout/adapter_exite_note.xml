@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_marginLeft="10dip"
+     android:layout_marginTop="10dip"
+     
+    android:layout_marginRight="10dip"
+    android:background="@drawable/exitlist"
+    android:orientation="vertical" >
+
+    <TextView
+       
+        android:id="@+id/text_notename"
+        style="@style/common_style_for_26sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+</LinearLayout>

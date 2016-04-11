@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+  android:background="@drawable/save"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:id="@+id/text_text"
+        style="@style/common_style_for_20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="dddd" />
+
+</LinearLayout>

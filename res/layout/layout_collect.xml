@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/CalibrationTextView2"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/CalibrationText"
+            android:text="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/CalibrationTextView2"
+                android:layout_marginTop="10dip"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/text_line"
+                style="@style/common_style_for_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/search_result_sort"
+                android:text="@string/thicklines" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/CalibrationTextView2"
+                android:layout_marginTop="10dip"
+                android:text="@string/color" />
+
+            <TextView
+                android:id="@+id/text_color"
+                style="@style/common_style_for_20sp"
+                android:layout_width="30dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip" >
+
+        <TextView
+            style="@style/CalibrationTextView2"
+            android:text="@string/length" />
+
+        <TextView
+            android:id="@+id/text_length"
+            style="@style/CalibrationText"
+            android:text="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+             android:id="@+id/text_deviation_name"
+            style="@style/CalibrationTextView2"
+            android:text="@string/piancha" />
+
+        <TextView
+            android:id="@+id/text_deviation"
+            style="@style/CalibrationText"
+            android:text="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            style="@style/CalibrationTextView2"
+            android:text="@string/jiediannum" />
+
+        <TextView
+            android:id="@+id/text_nodenum"
+            style="@style/CalibrationText"
+            android:text="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            style="@style/CalibrationTextView2"
+            android:text="@string/star_time" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/CalibrationText"
+            android:text="@string/star_time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            style="@style/CalibrationTextView2"
+            android:text="@string/end_time" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/CalibrationText"
+            android:text="@string/end_time" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg"
+    android:orientation="vertical"
+    tools:context=".CoordinateSetActivity" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+             android:id="@+id/geo_sys_set"
+            style="@style/common_style_for_20sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/poit"
+            android:layout_marginTop="10dip"
+            android:text="@string/coordinate_system" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/text_geo_sys_set"
+            android:id="@+id/text_geo_sys"
+            android:layout_toRightOf="@+id/geo_sys_set"
+            style="@style/common_style_for_24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/sys_bg1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+             />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/text_geo_sys_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/sys_bg2" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radiobtn_geo"
+            style="@style/common_style_for_18sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:text="@string/coordinate_system1" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_pro"
+            style="@style/common_style_for_18sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:text="@string/coordinate_syste2" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:id="@+id/ellipse_set"
+              android:layout_marginTop="10dip"
+            style="@style/common_style_for_20sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/poit"
+            android:text="@string/coordinate_type" />
+
+        <TextView
+             android:layout_toLeftOf="@+id/text_ellipse_set"
+            android:layout_toRightOf="@+id/ellipse_set"
+            android:id="@+id/text_ellipse"
+            style="@style/common_style_for_24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/sys_bg1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+             android:singleLine="true"
+            android:text="@string/ellipse_1" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/text_ellipse_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/sys_bg2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip" 
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/common_style_for_20sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/poit"
+            android:text="@string/coordinate_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/text_user"
+                style="@style/common_style_for_24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/du_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="@string/unit_1" />
+
+            <TextView
+                 android:id="@+id/text_user_set"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/du2_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+    <com.piespace.mapping.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        layout="@layout/layout_title_bar" />
+
+    <ImageButton
+        android:id="@+id/to_mylocation"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/titile"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@null"
+        android:src="@drawable/icon_map_btn_location" />
+
+    <ImageButton
+        android:id="@+id/to_mapchange"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/to_mylocation"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/icon_map_btn_change" />
+
+    <ImageButton
+        android:id="@+id/to_compass"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/to_mapchange"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:src="@drawable/icon_map_btn_compass" />
+
+    <ImageButton
+        android:id="@+id/to_moonstate"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/to_compass"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:src="@drawable/icon_map_btn_moon_bg" />
+    
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+         <include
+                android:id="@+id/loc_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/base_info" />
+          <include
+                android:id="@+id/loc_dis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/base_info" />
+    </LinearLayout>
+
+</RelativeLayout>

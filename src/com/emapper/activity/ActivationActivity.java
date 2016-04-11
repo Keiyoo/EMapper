@@ -1,0 +1,78 @@
+package com.emapper.activity;
+
+import com.emapper.util.Constant;
+import com.emapper.util.ResPathCenter;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.gis.API;
+import com.android.gis.Workspace;
+
+public class ActivationActivity extends BaseActivity implements OnClickListener {
+	
+	private Button m_btn_back;
+	private TextView m_text_save;
+	private EditText m_edit_activation;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		initView();
+	}
+
+	private void initView() {
+		/*setContentView(R.layout.activity_activation);
+		TextView text_title = (TextView) findViewById(R.id.tv_title);
+		text_title.setText(getString(R.string.activation_ac));*/
+		
+		
+		//获取注册号并显示
+		String strDeviceID = API.getDeviceID();
+		TextView text_deviceid = (TextView) findViewById(R.id.edit_deviceid);
+		text_deviceid.setText(strDeviceID);
+		
+		m_text_save = (TextView) findViewById(R.id.text_save);
+		m_text_save.setVisibility(View.VISIBLE);
+		m_text_save.setOnClickListener(this);
+		m_text_save.setText(getString(R.string.activation_sure));
+		m_btn_back = (Button) findViewById(R.id.btn_back);
+		m_btn_back.setOnClickListener(this);
+		m_edit_activation = (EditText) findViewById(R.id.edit_accode);
+		
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+//		if (v == m_text_save) 
+//		{		
+			String strACCode = m_edit_activation.getText().toString();
+			boolean bRegistered = API.LS_RegisterRuntime(strACCode);
+//			if(bRegistered && API.LS_IsRegistered())
+//			{
+				openActivity(this, FirstActivity.class);
+				
+				finish();
+//			}
+/*			else
+			{
+				Toast.makeText(this, "激活码输入错误！", Toast.LENGTH_SHORT).show();
+			}*/
+
+//		}
+//		else if(v == m_btn_back)
+//		{
+//			finish();
+//		}
+	}
+}

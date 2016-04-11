@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 颜色集 -->
+    <color name="transparent">#ffffffff</color>
+    <color name="no_transparent">#00ffffff</color>
+    <color name="press">#a54fc203</color>
+    <color name="disable">#ff999999</color>
+    <color name="txt_bg">#a8393939</color>
+    <color name="btn_n">#a82a6a00</color>
+    <color name="btn_p">#ff4fc203</color>
+    <color name="bg">#a82a6a00</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="top_bg">#a5183c00</color>
+    <color name="no_compass_view">#ff161616</color>
+    <color name="orange">#ffd200</color>
+     <color name="black">#000000</color>
+</resources>

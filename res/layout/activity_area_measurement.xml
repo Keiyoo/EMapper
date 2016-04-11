@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mianji_bg"
+    android:orientation="vertical"
+    tools:context=".AreaMeasurementActivity" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/mease" />
+
+        <TextView
+            android:id="@+id/text_measure"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/measure" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/read" />
+
+        <TextView
+             android:id="@+id/text_read"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/read" />
+    </LinearLayout>
+
+</LinearLayout>

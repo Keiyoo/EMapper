@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/exitnote"
+    android:layout_height="match_parent"
+    tools:context=".ExitingNoteActivity" >
+<include layout="@layout/layout_title_bar"/>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/look" />
+        
+
+        <TextView
+            android:id="@+id/text_look"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/look" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/delete" />
+
+        <TextView
+             android:id="@+id/text_delect"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/delect" />
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/deletdall" />
+
+        <TextView
+            android:id="@+id/text_delete_all"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/point_delete_all" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:src="@drawable/savesd" />
+
+        <TextView
+             android:id="@+id/text_save_sd"
+            style="@style/common_style_for_24sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/measure"
+            android:gravity="center"
+            android:text="@string/savesd" />
+    </LinearLayout>
+    
+</LinearLayout>

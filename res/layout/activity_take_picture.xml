@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pointmanager_bg"
+    android:orientation="vertical"
+    tools:context=".LineActivity" >
+
+    <include 
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title_bar" />
+
+    <ImageView
+        android:layout_below="@+id/title"
+        android:layout_gravity="center"
+        android:id="@+id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:layout_margin="10dip"
+        android:scaleType="fitXY"
+        android:background="@drawable/bg_main" 
+        android:layout_above="@+id/check_save"/>
+
+    <CheckBox
+        android:layout_alignParentBottom="true"
+          android:id="@+id/check_save"
+        style="@style/common_style_for_20sp_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="10dip"
+        android:text="@string/savepicture" />
+</RelativeLayout>

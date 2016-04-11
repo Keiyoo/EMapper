@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/calibration_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+        tools:context=".CalibrationPointActivity" >
+
+        <include layout="@layout/layout_title_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/common_style_for_26sp_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/name_bg"
+                    android:paddingLeft="15dip" 
+                   />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/name_bg_3" />
+
+                <ImageView
+                    android:id="@+id/img_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/name_bg2" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/lon"
+                android:text="@string/lon" />
+
+            <EditText
+                
+                android:id="@+id/edit_lon"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/lon"
+                android:text="@string/lat" />
+
+            <EditText
+                android:id="@+id/edit_lan"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/smallicon"
+                android:text="@string/high" />
+
+            <EditText
+                android:id="@+id/edit_high"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/smallicon"
+                android:text="@string/precision" />
+
+            <EditText
+                android:id="@+id/edit_precision"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/smallicon"
+                android:text="@string/time" />
+
+            <EditText
+                android:id="@+id/edit_time"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/CalibrationTextView"
+                android:drawableLeft="@drawable/smallicon"
+                android:text="@string/remark" />
+
+            <EditText
+                android:id="@+id/edit_remark"
+                style="@style/CalibrationeditText"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_navigation"
+                style="@style/common_style_for_24sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/calibr_bg"
+                android:gravity="center"
+                android:text="@string/navigation" />
+
+            <TextView
+                android:id="@+id/text_map"
+                style="@style/common_style_for_24sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/calibr_bg"
+                android:gravity="center"
+                android:text="@string/map" />
+
+            <TextView
+                android:id="@+id/text_picture"
+                style="@style/common_style_for_20sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/calibr_bg"
+                android:gravity="center"
+                android:text="@string/picture" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
