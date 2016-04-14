@@ -136,7 +136,7 @@ public class NaviGPS extends Observable {
 		public void onGpsStatusChanged(int event) {
 			updateSatelliteInfo();
 
-			/** 添加GPS状态监听 lijun.xu */
+			/** 添加GPS状态监听 keiyoo.So */
 			setChanged();
 			notifyObservers();
 		}

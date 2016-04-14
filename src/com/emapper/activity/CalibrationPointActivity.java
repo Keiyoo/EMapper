@@ -252,7 +252,7 @@ public class CalibrationPointActivity extends BaseActivity implements
 
 		if (v == img_cancel) {
 
-		} else if (v == text_picture) {// 查看照片
+		} else if (v == text_picture) {// check the pic
 			Intent intent = new Intent();
 			intent.setClass(this, TakePictureActivity.class);
 			intent.putExtra("image", image);
